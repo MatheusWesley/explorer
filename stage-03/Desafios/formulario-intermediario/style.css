@@ -138,6 +138,10 @@ fieldset legend {
   line-height: 26px;
 }
 
+input:invalid {
+  border: 1px solid #ff5374;
+}
+
 h2 {
   font-size: 20px;
   line-height: 34px;
