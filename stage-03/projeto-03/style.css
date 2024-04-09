@@ -1,5 +1,114 @@
+/* DEFININDO PROPRIEDADES GLOBAIS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: 'Source Serif Pro', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  color: #a54328;
+  font-size: 1.6rem
+}
+
+h1 ,h2{
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+}
+h2 {
+  margin-bottom: 3.2rem;
+}
+p, li, strong {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+/* MAIN */
+main {
+  margin-inline: auto;
+  padding: 5.6rem 4rem;
+  max-width: 32rem;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+/* imagem */
+img {
+  width: 100%;
+  margin-block: 3.2rem;
+}
+
+/* button */
+button {
+  font-family: 'Source Serif 4', sans-serif;
+  font-size: 1.0rem;
+  font-weight: 500;
+  padding: .8rem 1.3rem;
+  color: #FFF;
+  background-color: #a54328;
+  border: none;
+  border-radius: .6rem;
+  margin-top: 3.2rem;
+}
+button:hover {
+  background-color: #bb4b2d;
+}
+
+.share {
+  background-color: #0f4dc2;
+}
+.share:hover {
+  background-color: #1359da;
+}
+
+/* Alinhamento das listas */
+ ul, ol {
+  padding-left: 2.4rem;
+ }
+
+ul {
+  margin-bottom: 3.2rem;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1080px) {
+  main {
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 16rem;
+    padding: 9rem 6rem;
+  }
+
+  .recipe {
+    max-width: 43.5rem;
+  }
+  .ingredients {
+    max-width: 52.5rem;
+  }
+
+  h1, h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  p, li, strong {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  button {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 1rem 2rem;
+  }
 }
